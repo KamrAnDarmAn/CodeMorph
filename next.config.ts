@@ -1,7 +1,14 @@
-import type { NextConfig } from "next";
+// next.config.ts
+import nextra from "nextra";
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-export default nextConfig;
+export default nextra({
+  // Nextra options
+  // themeConfig: "./theme.config.tsx",
+})({
+  // Next.js options
+  pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
+  reactStrictMode: true,
+  images: {
+    unoptimized: false,
+  },
+});

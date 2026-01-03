@@ -1,5 +1,7 @@
 'use client'
 
+
+
 import React, { useState, useMemo } from 'react'
 import Editor from '@monaco-editor/react'
 import { useTheme } from 'next-themes'
@@ -12,6 +14,9 @@ import { XMLParser, XMLBuilder } from 'fast-xml-parser'
 import * as yaml from 'js-yaml'
 import * as toml from '@iarna/toml'
 import Papa from 'papaparse'
+
+// this line is a signal for nextjs that this page is dynamic
+// export const dynamic = 'force-dynamic'
 
 const formats = [
     { value: 'json', label: 'JSON', icon: '{}' },

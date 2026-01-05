@@ -14,6 +14,7 @@ import { XMLParser, XMLBuilder } from 'fast-xml-parser'
 import * as yaml from 'js-yaml'
 import * as toml from '@iarna/toml'
 import Papa from 'papaparse'
+import { encode, decode } from '@toon-format/toon'
 
 
 const formats = [
@@ -22,6 +23,7 @@ const formats = [
     { value: 'yaml', label: 'YAML', icon: '---' },
     { value: 'toml', label: 'TOML', icon: '=' },
     { value: 'csv', label: 'CSV', icon: ',' },
+    { value: 'toon', label: 'TOON', icon: '█' },
 ]
 
 const xmlParser = new XMLParser({
@@ -98,6 +100,13 @@ const SerializationConverter = () => {
                         throw new Error(`Invalid CSV: ${e.message}`)
                     }
                     break
+                case 'toon':
+                    try {
+                        parsedData = decode(inputValue)
+                    } catch (e: any) {
+                        throw new Error(`Invalid TOON: ${e.message}`)
+                    }
+                    break
                 default:
                     throw new Error('Unknown input format')
             }
@@ -160,6 +169,13 @@ const SerializationConverter = () => {
                         throw new Error(`Cannot convert to CSV: ${e.message}`)
                     }
                     break
+                case 'toon':
+                    try {
+                        result = encode(parsedData)
+                    } catch (e: any) {
+                        throw new Error(`Cannot convert to TOON: ${e.message}`)
+                    }
+                    break
                 default:
                     result = ''
             }
@@ -197,6 +213,7 @@ const SerializationConverter = () => {
             'yaml': 'yaml',
             'toml': 'plaintext',
             'csv': 'plaintext',
+            'toon': 'toon',
         }
         return mapping[format] || 'plaintext'
     }

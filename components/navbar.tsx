@@ -26,7 +26,7 @@ const Navbar = () => {
         { name: 'Number Converter', link: '/numbers-convertor' },
         { name: 'Serialization', link: '/serializtion' },
         { name: 'Language', link: '/language' },
-        { name: "Docs", link: '/docs/binary' },
+        // { name: "Docs", link: '/docs/binary' },
         { name: "About", link: '/about' },
 
     ]

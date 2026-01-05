@@ -1,8 +1,9 @@
+
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
-import { Car } from 'lucide-react'
-import React from 'react'
+
 
 const About = () => {
+
     return (
         <Card className='md:mx-4'>
             <CardHeader>

@@ -15,8 +15,6 @@ import * as yaml from 'js-yaml'
 import * as toml from '@iarna/toml'
 import Papa from 'papaparse'
 
-// this line is a signal for nextjs that this page is dynamic
-// export const dynamic = 'force-dynamic'
 
 const formats = [
     { value: 'json', label: 'JSON', icon: '{}' },

@@ -4,13 +4,9 @@ CodeMorph is an open-source platform designed to facilitate code transformation 
 
 ## Features
 
-- **Multi-language Support**: Supports a wide range of programming languages including Python, JavaScript, Java, C++, and more.
-- **Code Transformation**: Tools for refactoring, optimizing, and transforming codebases.
-- **Static Analysis**: Analyze code for potential errors, code smells, and adherence to coding standards.
-- **Visualization**: Generate visual representations of code structure and dependencies.
-- **Extensible Architecture**: Easily extend the platform with plugins and custom tools.
-- **User-friendly Interface**: Intuitive UI for both beginners and experienced developers.
-- **Command-line Tools**: Powerful CLI for automation and integration into CI/CD pipelines.
+- **Number Systems Conversion**: Easily convert numbers between different bases (binary, decimal, hexadecimal, etc.).
+- **Data Format \*Transformation**: Transform data between various formats such as JSON, XML, CSV, and more.
+- **Language Translation**: Translate code snippets between different programming languages.
 
 ## Installation
 

@@ -1,8 +1,8 @@
 'use client'
 
-import { useState } from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
-import { Code2 } from 'lucide-react'
+import { Code2, Github } from 'lucide-react'
 import { motion } from "motion/react"
 import { cn } from '@/lib/utils'
 import {
@@ -23,7 +23,7 @@ const Navbar = () => {
     const navItems = [
         { name: 'Home', link: '/' },
         { name: 'Number Converter', link: '/numbers-convertor' },
-        { name: 'Serialization', link: '/serialization' },
+        { name: 'Serialization', link: '/serializtion' },
         { name: 'Language', link: '/language' },
         { name: "AST", link: '/ast' },
         { name: "About", link: '/about' },
@@ -69,11 +69,7 @@ const Navbar = () => {
 
                 <div className="relative z-20 ml-auto flex items-center gap-2">
                     <Link href='https://github.com/KamrAnDarmAn'>
-                        <Button variant='secondary' className='hover:cursor-pointer'>
-                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
-                                <path d="M12 .297a12 12 0 00-3.797 23.398c.6.111.82-.261.82-.579 0-.286-.011-1.042-.016-2.045-3.338.726-4.042-1.613-4.042-1.613-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.083-.73.083-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.809 1.304 3.494.997.108-.775.418-1.304.76-1.604-2.665-.303-5.467-1.333-5.467-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.5 11.5 0 016.003 0c2.292-1.552 3.298-1.23 3.298-1.23.655 1.653.243 2.873.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.61-2.807 5.625-5.479 5.921.43.37.814 1.096.814 2.21 0 1.596-.015 2.882-.015 3.276 0 .321.218.694.825.576A12 12 0 0012 .297" />
-                            </svg>
-                        </Button>
+                        <Button variant='secondary' className='hover:cursor-pointer'><Github /></Button>
                     </Link>
                     {/* </NavbarButton> */}
                 </div>
@@ -90,7 +86,6 @@ const Navbar = () => {
                     <MobileNavToggle
                         isOpen={mobileMenuOpen}
                         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                        onToggle={() => setMobileMenuOpen(prev => !prev)}
                     />
                 </MobileNavHeader>
 

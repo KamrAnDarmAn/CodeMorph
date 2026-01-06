@@ -23,7 +23,7 @@ const Navbar = () => {
     const navItems = [
         { name: 'Home', link: '/' },
         { name: 'Number Converter', link: '/numbers-convertor' },
-        { name: 'Serialization', link: '/serializtion' },
+        { name: 'Serialization', link: '/serialization' },
         { name: 'Language', link: '/language' },
         { name: "AST", link: '/ast' },
         { name: "About", link: '/about' },

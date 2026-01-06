@@ -18,6 +18,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "CodeMorph",
   description: "A light weight syntax convertor",
+  verification: {
+    google: "xkla1WnOFno1GH9SXQ7DT5in9xXEPZMyzZCGhqk6Vcg"
+  }
 };
 
 export default function RootLayout({

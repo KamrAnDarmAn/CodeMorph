@@ -23,7 +23,7 @@ export function Hero() {
                     <Link href="https://github.com/KamrAnDarmAn">
                         <Github />
                     </Link>
-                    <Link href="https://www.linkedin.com/in/kamrandarman72">
+                    <Link href="https://www.linkedin.com/in/kamran-darman/">
                         <Linkedin />
                     </Link>
                 </div>

@@ -12,7 +12,6 @@ import {
     MobileNavHeader,
     MobileNavMenu,
     MobileNavToggle,
-    NavbarButton,
 } from '@/components/ui/resizable-navbar'
 // import { ThemeToggle } from '@/components/theme-toggle'
 import { Button } from './ui/button'
@@ -26,9 +25,8 @@ const Navbar = () => {
         { name: 'Number Converter', link: '/numbers-convertor' },
         { name: 'Serialization', link: '/serializtion' },
         { name: 'Language', link: '/language' },
-        // { name: "Docs", link: '/docs/binary' },
+        { name: "AST", link: '/ast' },
         { name: "About", link: '/about' },
-
     ]
 
     const handleMobileMenuClose = () => {
@@ -70,8 +68,6 @@ const Navbar = () => {
                 </motion.div>
 
                 <div className="relative z-20 ml-auto flex items-center gap-2">
-                    {/* <NavbarButton href="/numbers-convertor" variant="secondary" className='bg-transparent dark:bg-transparent' as={Link}> */}
-                    {/* <ThemeToggle /> */}
                     <Link href='https://github.com/KamrAnDarmAn'>
                         <Button variant='secondary' className='hover:cursor-pointer'><Github /></Button>
                     </Link>
